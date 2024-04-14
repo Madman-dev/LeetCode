@@ -3,7 +3,7 @@ class Solution {
         var counter = 0
         var result = num
 
-        while result >= 1 {
+        while result > 0 {
             let isDivisable: Bool = result % 2 == 0
 
             if isDivisable {
