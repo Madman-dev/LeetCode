@@ -6,13 +6,13 @@ class Solution {
         // convert to ASCII
         for char in s {
             let ascii = Int(char.asciiValue!)
-            print(ascii)
+
             if prev > 0 {
                 // make value positive
                 let value = abs(prev - ascii)
                 result += value
             }
-            prev = ascii //101
+            prev = ascii
         }
         
         return result
