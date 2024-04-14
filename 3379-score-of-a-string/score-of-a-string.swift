@@ -9,7 +9,7 @@ class Solution {
             print(ascii)
             if prev > 0 {
                 // make value positive
-                let value = abs(ascii - prev)
+                let value = abs(prev - ascii)
                 result += value
             }
             prev = ascii //101
