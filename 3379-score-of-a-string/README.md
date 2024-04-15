@@ -34,3 +34,10 @@
 	<li><code>2 &lt;= s.length &lt;= 100</code></li>
 	<li><code>s</code> consists only of lowercase English letters.</li>
 </ul>
+
+
+<br/><br/>
+
+## Learned
+  - able to learn about abs().
+  They ALWAYS return the positive value of the calculation.
