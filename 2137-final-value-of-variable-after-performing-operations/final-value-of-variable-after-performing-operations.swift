@@ -2,18 +2,8 @@ class Solution {
     var value: Int = 0
     func finalValueAfterOperations(_ operations: [String]) -> Int {
         for operation in operations {
-            checkAndReturnValue(operation: operation)
+            operation == "++X" || operation == "X++" ? (value += 1) : (value -= 1)
         }
         return value
-    }
-
-    func checkAndReturnValue(operation: String) {
-        switch operation {
-            case "++X": value += 1
-            case "X++": value += 1
-            case "--X": value -= 1
-            case "X--": value -= 1
-            default: return
-        }
     }
 }
