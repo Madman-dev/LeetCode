@@ -1,16 +1,11 @@
 class Solution {
     func maxWidthOfVerticalArea(_ points: [[Int]]) -> Int {
-        let newPoint = points.map { $0[0] }.sorted(by: >)
-        var widest: Int = 0
-        var prev: Int = 0
+        let sorted = points.map { $0[0] }.sorted()
+        var maxWidth: Int = 0
 
-        for point in newPoint {
-            var value = prev - point
-            if value > widest {
-                widest = value
-            }
-            prev = point
+        for value in 1..<sorted.count {
+            maxWidth = max(maxWidth, sorted[value] - sorted[value-1])
         }
-        return widest
+        return maxWidth
     }
 }
