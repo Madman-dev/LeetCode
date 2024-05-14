@@ -22,3 +22,21 @@ class twoPointer {
 	}
 }
 ```
+
+### Palindrome
+```swift
+func isPalidrome(string: String) -> Bool {
+	let characters: Array<string>
+	var left: Int = 0
+	var right: Int = characters.count - 1
+
+	while left < right {
+		if characters[left] != characters[right] {
+			return false
+		}
+		left += 1
+		right -= 1
+	}
+	return true
+}
+```
